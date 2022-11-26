@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+   <!--  bootstrap file  -->
+    <link rel="stylesheet" href="./icon-bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <!-- search section -->
+    <header>
+     
+        <div class="logo">
+            <h1 style="color:white ;">
+                Talabat
+            </h1>
+        </div>
+
+        <div class="search">
+            <input type='text' placeholder="ًًWhat Are You Looking For?"/>
+            <i class="bi bi-search"></i>
+        </div>
+
+           <!--action logos-->
+        <div class="actions">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                    <div class="badge">0</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-star"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="">Mobile Phones</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- content -->
+    <section class="content" >
+
+       <!-- slider-->      
+       <div class="image_container">
+        <div id="img" class="img"></div>
+        
+        <!--
+          <div class="btn_container">
+          <button   style="display: none;" class="left"><i class="bi bi-arrow-left-square "></i></button>
+          <button   style="display: none;" id="btn" class="right"><i class="bi bi-arrow-right-square"></i>
+          </button>
+        </div>
+      -->
+
+        <!-- bubble start -->
+        <div class="lood" >
+          <span onmouseenter="togglethis1()" class="bob"></span>  
+          <span onmouseenter="togglethis2()" class="bob"></span>
+          <span onmouseenter="togglethis3()" class="bob"></span>
+        </div>
+<!-- bubble end -->
+    </section>
+            
+          
+
+    <section class="products">
+        <h1 id="header" >the best sales products</h1>
+
+        <div class="con1">
+          <div>
+            <img src="./images/lap1.jpg" alt="">
+            <div>
+               <span>laptop</span> 
+               <p> Explore laptops in our  <br> website, and find your favorite  <br> <a  class="readmore" href="">Explore</a></p>
+               
+            </div>
+          </div>
+
+          <div>
+            <img src="./images/makeup1.jpg" alt="">
+            <div>
+              <span>Makeup</span> 
+              <p> we offer the best  <br> products for beauty in our website <br> <a  class="readmore" href="">Explore</a></p>
+              
+           </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="con2">
+
+            <div>
+                <img src="./images/mob2.jpg" alt="">
+                <div>
+                  <span>Mobile</span> 
+                  <p> Explore Mobile in our  <br> website, and find your favorite  <br> <a  class="readmore" href="">Explore</a></p>
+                  
+               </div>
+            </div>
+           
+        </div>
+
+    </section>
+
+    <!-- add to card -->
+
+    <section class="addtocard" > 
+      
+      <ul class="showbuttons">
+        
+        <li><button  onclick="filter(this)" >All</button></li>     <!--this refer to the caller-->
+        <li><button    onclick="filter(this)"  >mobile</button></li>
+        <li><button  onclick="filter(this)"  >makeup</button></li>
+        <li><button  onclick="filter(this)"  >laptop</button></li>
+        <li><button  onclick="filter(this)"  >cars</button></li>
+      </ul>
+      <div id="message" ></div>
+      
+        <div  class="product-container" >
+           
+            <div class="product-box" data-category="laptop">
+                <img src="./images/lap1.jpg">
+                <div class="product-info">
+                  <h5>V15-ADA Laptop With 15.6-Inch HD Display, AMD 3020E Processor/4GB RAM
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  12600 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 14500</del>  8% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >6.5  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                              
+ 
+                </div>
+                
+              </div>
+        
+              <div class="product-box" data-category="makeup">
+                <img src="./images/makeup1.jpg">
+                <div class="product-info">
+                  <h5>Everyday Essentials Multi Use Brush Set Multicolour for every  product you create  
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  3350 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 3900</del>  10% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >3.5  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                   
+                </div>
+                
+              </div>
+
+              <div class="product-box" data-category="mobile">
+                <img src="./images/mob1.jpg">
+                <div class="product-info">
+                  <h5>Spark 8C Dual SIM Turquoise Cyan 4GB RAM 64GB 4G LTE created by samsung  
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  6050 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 6500</del>  9% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >7.3  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                    
+                </div>
+                
+              </div>
+                 
+
+              <div class="product-box" data-category="car">
+                <img src="./images/car1.jpg">
+                <div class="product-info">
+                  <h5>2019 Land Rover Range Rover Velar P250 R-Dynamic HSE - for middel east
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  600000 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 610000</del>  12% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >3.5  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                     
+                </div>
+                
+              </div>
+
+
+              <div class="product-box" data-category="car">
+                <img src="./images/car2.jpg">
+                <div class="product-info">
+                  <h5>2020 BMW Range Rover Velar P250 R-Dynamic HSE - for middel east
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  1000000 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 1200000</del>  12% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >6.3  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                      
+                </div>
+                
+              </div>
+
+
+              <div class="product-box" data-category="makeup">
+                <img src="./images/makeup2.webp">
+                <div class="product-info">
+                  <h5>Everyday Essentials Multi Use Brush Set Multicolour for every product
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  2500.00 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 2700</del>  16% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >4.5  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add"  >Add to card</button>
+                       
+                </div>
+                
+              </div>
+
+
+              <div class="product-box" data-category="laptop">
+                <img src="./images/lap2.jpg">
+                <div class="product-info">
+                  <h5>IP 5 15ITL05 with 15.6 inch/,CORE_I7-1165G7/8GB RAM/512 SSD/Intel Iris Xe
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  17000.00 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 1855.95</del>  4% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >5.3  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                    <button class="add" >Add to card</button>
+                          
+                </div>
+                
+              </div>
+
+
+
+              <div class="product-box" data-category="car">
+                <img src="./images/car3.webp">
+                <div class="product-info">
+                  <h5>2020 BMW Range Rover Velar P250 R-Dynamic HSE - for middel east
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  950000.00 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 110000.00</del>  12% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >5.6  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                         
+                </div>
+                
+              </div>
+
+
+              
+              <div class="product-box" data-category="makeup">
+                <img src="./images/makeup3.webp">
+                <div class="product-info">
+                  <h5>Everyday Essentials Multi Use Brush Set Multicolour for every product
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  1500 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 1650</del>  9% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >5.6  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                          
+                </div>
+                
+              </div>
+
+
+              <div class="product-box" data-category="mobile">
+                <img src="./images/mob3.jpg">
+                <div class="product-info">
+                  <h5>Galaxy A03 Core Dual SIM Black 2GB RAM 32GB LTE - Middle East 
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  1050.66 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 11000.00</del>  3% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >7.3  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                           
+                </div>
+              </div>
+
+              <div class="product-box" data-category="laptop">
+                <img src="./images/lap3.jpg">
+                <div class="product-info">
+                  <h5>Laptop V14 ADA 14 Inch HD, AMD A4 3020E/4 GB RAM DDR4/1 TB HHD
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  10550.55 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 11750</del>  6% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >4.3  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                            
+                </div>
+                
+              </div>
+
+              <div class="product-box" data-category="mobile">
+                <img src="./images/mob4.jpg">
+                <div class="product-info">
+                  <h5>X9 4G Dual SIM Midnight Black 8GB RAM 128GB - Middle East Version 
+                    <p style="font-weight:bolder; font-size: 15px;"  class="price "> <span class="currency" >EGP</span>  19500.00 </p>
+                    <p style="color: green;"  class="discount ">  <del style="color: gray;"> 22550.00</del>  12% off </p>
+                    <p> <pre> <span class="express"> express  </span>          <span class="rate" >5.5  <i class="bi bi-star"></i> </span> </pre> </p>
+                  </h5>
+                  <button class="add" >Add to card</button>
+                             
+                </div>
+                
+              </div>
+        </div>
+
+    </section>
+
+
+    <!-- Start Footer -->
+
+  <footer>
+    <div class="container">
+      <div class="company-info">
+        <div  style="margin-left: 20px;" class="history">
+          <h3 class="name">Talabat</h3>
+          <p >Otlob is the #1 online food ordering service in Egypt. We offer the quickest, easiest.</p>
+        </div>
+        <ul class="social">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <span class="arrow-up"><i class="bi bi-arrow-up-square"></i></span>
+    </div>
+     
+  </footer>
+  
+  <!-- End Footer -->
+
+   
+
+
+
+  
+
+
+    <script src="./js/demo.js" ></script>
+</body>
+</html>
